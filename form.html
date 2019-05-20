@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Select Robot Type
+    <form onsubmit="return robotType(this)">
+        <select>
+            <option value="UNIPEDAL">Unipedal</option>
+            <option value="BIPEDAL">Bipedal</option>
+            <option value="QUADRUPEDAL">Quadrupedal</option>
+            <option value="ARACHNID">Arachnid</option>
+            <option value="RADIAL">Radial</option>
+            <option value="AERONAUTICAL">Aeronautical</option>
+          </select>
+        <input type="submit" value="Create Robot">
+        <input type="button" value="Show list" onclick="submit()">
+    </form>
+
+
+    <script src="robotObj.js"></script>
+</body>
+</html>
