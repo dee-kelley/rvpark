@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Robo Crop</title>
 </head>
 <body>
-    Select Robot Type
-    <form onsubmit="return robotType(this)">
-        <select>
+    <header>
+        <h1>Grow your own Robot</h1>
+    </header>
+    <form>
+        Robot Type: <select>
             <option value="UNIPEDAL">Unipedal</option>
             <option value="BIPEDAL">Bipedal</option>
             <option value="QUADRUPEDAL">Quadrupedal</option>
@@ -17,8 +19,9 @@
             <option value="RADIAL">Radial</option>
             <option value="AERONAUTICAL">Aeronautical</option>
           </select>
-        <input type="submit" value="Create Robot">
-        <input type="button" value="Show list" onclick="submit()">
+          <br>
+            Robot name: <input type="text" id="name"><br>
+            <input name="Submit"  type="submit" value="Submit" onclick ="return submit()" />
     </form>
 
 
