@@ -10,7 +10,7 @@
     <header>
         <h1>Grow your own Robot</h1>
     </header>
-    <form>
+    <form id="form" onsubmit="return false">
         Robot Type: <select>
             <option value="UNIPEDAL">Unipedal</option>
             <option value="BIPEDAL">Bipedal</option>
@@ -20,8 +20,10 @@
             <option value="AERONAUTICAL">Aeronautical</option>
           </select>
           <br>
-            Robot name: <input type="text" id="name"><br>
-            <input name="Submit"  type="submit" value="Submit" onclick ="return submit()" />
+            Robot name: 
+            <input name="Name" type="text" id="userInputName" />
+            <br>
+            <input name="Submit" type="submit" value="Submit" onclick="submit()" />
     </form>
 
 
