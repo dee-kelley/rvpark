@@ -18,7 +18,7 @@ const create = ()=>{
     console.log(type)
 };
 
-$('.class').on('click', ()=> { 
+$('.click').on('click', ()=> { 
     let input = document.getElementById("userInput").value;
     console.log(input);
     return;
