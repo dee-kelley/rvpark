@@ -24,6 +24,7 @@ $('.clickBait').on('click', (e)=> {
     let inputTwo = document.getElementById("type").value
     console.log(input);
     $('.nameS').append(`hello ${input}, type ${inputTwo}`)
+    
     return;
 });
 
