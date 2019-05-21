@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
     <title>Robo Crop</title>
 </head>
 <body>
     <header>
         <h1>Grow your own Robot</h1>
     </header>
-    <form id="form" onsubmit="return false">
-        Robot Type: <select>
+    <form id="form" onchange="create()">
+        Select Your Robot Type: <select id="selectedType">
+            <option></option>
             <option value="UNIPEDAL">Unipedal</option>
             <option value="BIPEDAL">Bipedal</option>
             <option value="QUADRUPEDAL">Quadrupedal</option>
@@ -19,14 +22,16 @@
             <option value="RADIAL">Radial</option>
             <option value="AERONAUTICAL">Aeronautical</option>
           </select>
+          <input name="Name" type="text" id="type" />
           <br>
             Robot name: 
-            <input name="Name" type="text" id="userInputName" />
-            <br>
-            <input name="Submit" type="submit" value="Submit" onclick="submit()" />
+            <input name="Name" type="text" id="userInput" />
+            <button class="click">Submit</button>
+
     </form>
 
 
-    <script src="robotObj.js"></script>
+
+    <script src="robots.js"></script>
 </body>
 </html>
