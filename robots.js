@@ -9,7 +9,7 @@ class Robot {
 
 const naming = document.getElementById("userInput");
 let robot = new Robot(naming);
-$('.name').append(naming)
+
 console.log(naming)
 
 const create = ()=>{
@@ -18,9 +18,12 @@ const create = ()=>{
     console.log(type)
 };
 
-$('.click').on('click', ()=> { 
+$('.clickBait').on('click', (e)=> { 
+    e.preventDefault();
     let input = document.getElementById("userInput").value;
+    let inputTwo = document.getElementById("type").value
     console.log(input);
+    $('.nameS').append(`hello ${input}, type ${inputTwo}`)
     return;
 });
 
